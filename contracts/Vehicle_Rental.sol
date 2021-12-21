@@ -199,6 +199,8 @@ contract Vehicle_Rental {
 
     function overSpeeding(string memory _vehicleID) public {
         require( msg.sender == Vehicles[_vehicleID].renter, "Invalid address.");
+        if(!Vehicles[_vehicleID].isStored)
+            revert("This ID is not registered in the database.");
 
         Vehicles[_vehicleID].events.push("Overspeeding");
         Vehicles[_vehicleID].renter_that_triggered_events.push(msg.sender);
@@ -211,6 +213,8 @@ contract Vehicle_Rental {
 
     function suddenStop(string memory _vehicleID) public {
         require( msg.sender == Vehicles[_vehicleID].renter, "Invalid address.");
+        if(!Vehicles[_vehicleID].isStored)
+            revert("This ID is not registered in the database.");
 
         Vehicles[_vehicleID].events.push("Sudden stop");
         Vehicles[_vehicleID].renter_that_triggered_events.push(msg.sender);
@@ -223,6 +227,8 @@ contract Vehicle_Rental {
 
     function accident(string memory _vehicleID) public {
         require( msg.sender == Vehicles[_vehicleID].renter, "Invalid address.");
+        if(!Vehicles[_vehicleID].isStored)
+            revert("This ID is not registered in the database.");
 
         Vehicles[_vehicleID].events.push("Accident");
         Vehicles[_vehicleID].renter_that_triggered_events.push(msg.sender);
@@ -235,6 +241,8 @@ contract Vehicle_Rental {
 
     function malfunction(string memory _vehicleID) public {
         require( msg.sender == Vehicles[_vehicleID].renter, "Invalid address.");
+        if(!Vehicles[_vehicleID].isStored)
+            revert("This ID is not registered in the database.");
 
         Vehicles[_vehicleID].events.push("Malfunction");
         Vehicles[_vehicleID].renter_that_triggered_events.push(msg.sender);
