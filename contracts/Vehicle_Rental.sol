@@ -3,7 +3,7 @@ pragma solidity 0.8.0;
 
 /// @title Vehicle Rental
 /// @author Eduardo Santiago
-/// @notice This is a basic contract that resembles the rental of a vehicle that also is able to log certain events.
+/// @notice This is a basic contract that resembles the rental of a vehicle that is also able to log certain events.
 
 contract Vehicle_Rental {
 
