@@ -152,7 +152,7 @@ contract Vehicle_Rental {
     /// @param _vehicleID  Identifier of the vehicle being used
     /// @return price      The price to be payed at the moment this function is used (and inserted in a block)
     
-    function getCurrentPrice(string memory _vehicleID) public returns(uint, uint) {
+    function getCurrentPrice(string memory _vehicleID) public returns(uint) {
         if(!Vehicles[_vehicleID].isStored)
             revert("This ID is not registered in the database.");
         require( Vehicles[_vehicleID].isAvailable == false, "The vehicle is not in use. Please check the ID");
