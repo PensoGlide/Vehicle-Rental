@@ -4,7 +4,6 @@ pragma solidity 0.8.0;
 /// @title Vehicle Rental
 /// @author Eduardo Santiago
 /// @notice This is a basic contract that resembles the rental of a vehicle that also is able to log certain events.
-/// @dev 
 
 contract Vehicle_Rental {
 
@@ -12,8 +11,8 @@ contract Vehicle_Rental {
     ///////////////////////////     Parameter definition     ///////////////////////////
 
 
-    /** @dev Each vehicle is stored in a struct-type variable containing various owner-defined parameters, variables for the flow of the contract and arrays for the events and the respective renter with which these events ocurred.
-           * Each Vehicle is then stored in 
+    /** @dev The information of each vehicle is stored in a struct-type variable containing various owner-defined parameters, variables for the flow of the contract and arrays for the events and the respective renter with which these events ocurred.
+           * Each Vehicle is then stored using a mapping with struct in Vehicles.
            * The biggest place for improvement of this struct is in the storing of events and the respective renter. Ideally a mapping would be used, but I couldn't make it work as of yet.*/
 
     struct Vehicle {
