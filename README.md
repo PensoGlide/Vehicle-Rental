@@ -1,6 +1,6 @@
 # Vehicle Rental - Smart Contract
 
-This is a simple Solidity smart contract that aims to emulate a decentralized system capable of providing any vehicle rental service to whoever from whoever.
+This is a simple Solidity smart contract (built on version 0.8.0) that aims to emulate a decentralized system capable of providing any vehicle rental service to whoever from whoever.
 
 This Smart Contract is based on the premisse that the vehicle has a unique *ID*. The vehicle's owner can then register this *ID* to a vehicle, detailing the brand, model, plate number (if it's a car or motorcycle), and, most importantly, an initial fee and hourly fee.
 
@@ -31,4 +31,5 @@ This section is applicable in both Remix or when running locally on your compute
 ---
 ## Testing
 
+For testing, a contract instance is made by making use of *Ganache-CLI* v6.12.2 as our local test network. *Web3* v1.6.1 and *Mocha* v9.1.3 are used aswell.
 

@@ -1,0 +1,25 @@
+{
+  "name": "vehicle_rental",
+  "version": "1.0.0",
+  "description": "This is a simple Solidity smart contract that aims to emulate a decentralized system capable of providing any vehicle rental service to whoever from whoever.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PensoGlide/Vehicle-Rental.git"
+  },
+  "author": "Eduardo Santiago",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PensoGlide/Vehicle-Rental/issues"
+  },
+  "homepage": "https://github.com/PensoGlide/Vehicle-Rental#readme",
+  "dependencies": {
+    "ganache-cli": "^6.12.2",
+    "mocha": "^9.1.3",
+    "solc": "^0.8.1",
+    "web3": "^1.6.1"
+  }
+}
