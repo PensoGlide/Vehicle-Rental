@@ -31,5 +31,7 @@ This section is applicable in both Remix or when running locally on your compute
 ---
 ## Testing
 
-For testing, a contract instance is made by making use of *Ganache-CLI* v6.12.2 as our local test network. *Web3* v1.6.1 and *Mocha* v9.1.3 are used aswell.
+For testing *Web3* v1.6.1 and *Mocha* v9.1.3 are used, and a contract instance is created using *Ganache-CLI* v6.12.2 as our local test network. Unfortunately, I was unable to get a test contract deployment to work and, as a result, I was unable to formulate formal testing using this approach. The issue must be on lines 29-31 of `test/Vehicle_Rental.test.js`, but I'm not sure why.
+
+Due to this, all my testing was made by hand on the Remix "*Deploy & Run Transactions*" interface itself.
 

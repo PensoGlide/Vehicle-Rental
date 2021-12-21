@@ -4,7 +4,7 @@
   "description": "This is a simple Solidity smart contract that aims to emulate a decentralized system capable of providing any vehicle rental service to whoever from whoever.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
